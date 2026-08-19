@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char str[] = "C,Java,Python";
+    char *p;
+
+    p = strtok(str, ",");
+
+    while(p != NULL)
+    {
+        printf("%s\n", p);
+        p = strtok(NULL, ",");
+    }
+
+    return 0;
+}
